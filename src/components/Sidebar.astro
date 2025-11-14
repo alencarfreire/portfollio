@@ -40,14 +40,14 @@ const { selectedItem } = Astro.props;
           alt=""
           class="nav-link-image"
         />
-        <div>Home</div>
+        <div>Iníco</div>
       </a>
       <a
-        href="/software-development"
+        href="/development-front-end"
         class={`nav-link-container w-inline-block ${
-          selectedItem === "software-development" ? "w--current" : ""
+          selectedItem === "development-front-end" ? "w--current" : ""
         }`}
-        aria-current={selectedItem === "software-development"
+        aria-current={selectedItem === "development-front-end"
           ? "page"
           : undefined}
       >
@@ -57,26 +57,12 @@ const { selectedItem } = Astro.props;
           alt=""
           class="nav-link-image"
         />
-        <div>Software development</div>
+        <div>Desenvolvedor Front-End</div>
       </a>
       <a
-        href="/devops"
+        href="/freelancer"
         class={`nav-link-container w-inline-block ${
-          selectedItem === "devops" ? "w--current" : ""
-        }`}
-      >
-        <img
-          src="/assets/dns.svg"
-          loading="eager"
-          alt=""
-          class="nav-link-image"
-        />
-        <div>DevOps</div>
-      </a>
-      <a
-        href="/personal-projects"
-        class={`nav-link-container w-inline-block ${
-          selectedItem === "personal-projects" ? "w--current" : ""
+          selectedItem === "freelancer" ? "w--current" : ""
         }`}
       >
         <img
@@ -85,7 +71,7 @@ const { selectedItem } = Astro.props;
           alt=""
           class="nav-link-image"
         />
-        <div>Personal projects</div>
+        <div>Projetos Freelancer</div>
       </a>
     </nav>
 
