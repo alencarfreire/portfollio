@@ -4,45 +4,50 @@ import Project from "../components/Project.astro";
 import Sidebar from "../components/Sidebar.astro";
 const projects = [
   {
-    title: "GPS Transfer",
+    title: "Trindtech",
+    position: "Desenvolvedor de Software",
     desc: [
-      "Desenvolvi uma Landing Page para um serviço de transfer de passageiros, com o intuito de aumentar a visibilidade online e atrair mais clientes.",
+      "Responsável pelo aprimoramento contínuo de um portal baseado em WordPress.",
+      "Atuação no Front-End em diversos projetos, garantindo interfaces responsivas e amigáveis.",
     ],
-    tech: ["Astro", "React", "Tailwind CSS"],
-    link: "https://gpstransfer.com.br",
+    tech: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "WordPress",
+      "PHP",
+      "Tailwind CSS",
+    ],
+    link: "https://trindtech.com.br/",
+  },
+  {
+    title: "Compass UOL",
+    position: "Desenvolvedor Mobile (Estágio)",
+    desc: [
+      "Estágio em desenvolvimento de aplicações mobile, focado em React Native.",
+    ],
+    tech: ["React Native", "Styled Component", "TypeScript"],
+    link: "https://compass.uol/",
   },
   {
     title: "Porto Seguro Roteiros",
+    position: "Desenvolvedor Front-End",
     desc: [
-      "Criei um site para uma agência de passeios, destacando seus roteiros personalizados e facilitando o contato com potenciais clientes.",
+      "Atuei desde a fase de planejamento até a implementação final do site de captação, garantindo que todas as funcionalidades atendessem às necessidades do cliente.",
+      "Participei da equipe de desenvolvimento do aplicativo Marés Costa do Descobrimento.",
     ],
-    tech: ["Next.js", "Tailwind CSS", "TypeSript"],
-    link: "https://portoseguroroteiros.com.br",
-  },
-  {
-    title: "Bumpi Imports",
-    desc: [
-      "Desenvolvi uma plataforma de e-commerce para uma empresa de importação, facilitando a venda de produtos importados diretamente aos consumidores.",
-    ],
-    tech: ["WordPress", "WooCommerce", "Elementor", "PHP"],
-    link: "https://bumpiimports.com/",
-  },
-  {
-    title: "https://cebeijaflor.com.br/",
-    desc: [
-      "Criei um site institucional para uma escola, com o objetivo de fornecer informações sobre as turmas, eventos e facilitar a comunicação com alunos e pais.",
-    ],
-    tech: ["WordPress", "Elementor", "PHP"],
+    tech: ["React", "Next.js", "React Native", "Tailvind CSS", "Dokploy"],
+    link: "https://portoseguroroteiros.com.br/",
   },
 ];
 ---
 
 <!doctype html>
 <html>
-  <Header title="Projetos Freelancer | Vinícius Freire" />
+  <Header title="Minhas experiências | Vinícius Freire" />
   <body>
     <div class="content">
-      <Sidebar selectedItem="personal-projects" />
+      <Sidebar selectedItem="software-development" />
       <nav class="main">
         <div class="container">
           <div class="back-nav-container">
@@ -57,7 +62,7 @@ const projects = [
             >
           </div>
           <div class="content-container">
-            <h1>Projetos Freelancer</h1>
+            <h1>Experiências</h1>
             <section class="items-container">
               <div class="resouce-items">
                 {
@@ -65,6 +70,7 @@ const projects = [
                     <Project
                       title={project.title}
                       link={project.link}
+                      position={project.position}
                       desc={project.desc}
                       tech={project.tech}
                     />
