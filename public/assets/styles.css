@@ -573,6 +573,12 @@ p {
   align-items: center;
 }
 
+.icons-social {
+  display: flex;
+  gap: 16px;
+  margin-top: 22px;
+}
+
 @media screen and (max-width: 991px) {
   .content {
     flex-direction: column;
