@@ -10,11 +10,37 @@ const { title } = Astro.props;
 <html lang="PT-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
+    <meta
+      name="description"
+      content="Vinícius Freire - Desenvolvedor de projetos na web."
+    />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+
+    <!-- Open Graph (Facebook, WhatsApp etc) -->
+    <meta property="og:title" content={title} />
+    <meta
+      property="og:description"
+      content="Vinícius Freire - Desenvolvedor de projetos na web."
+    />
+    <meta
+      property="og:image"
+      content="https://freiretech.site/assets/vini.png"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta
+      name="twitter:description"
+      content="Vinícius Freire - Desenvolvedor de projetos na web."
+    />
+    <meta
+      name="twitter:image"
+      content="https://freiretech.site/assets/vini.png"
+    />
   </head>
   <body>
     <slot />
